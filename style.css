@@ -1,0 +1,143 @@
+*{
+    background-color: #E5E5E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 5%;
+}
+
+main{
+    display:flex;  
+    margin-bottom: 50px;
+    margin-left: 80px; 
+}
+
+.texto-entrada{
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder{color: #0A3871;}
+.texto-entrada:focus {
+    outline: none;
+}
+
+.texto-saida{
+    background: white;
+    background-image: url(image/boneco.png);
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: auto 400px;
+    font-size: 24px;
+    border: none;
+    border-radius: 24px;
+    color: #495057;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.texto-saida:focus{
+    outline: none;
+}
+
+.texto-saida, .texto-entrada {
+    resize: none; 
+}
+
+.botoes{
+    display: flex;
+    margin-top: 18px;
+}
+
+.botao-criptografar {
+    background-color: #0A3871;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    transition: all 0.3s ease;
+}
+
+.botao-criptografar:hover {
+    background-color: #154aaf; /* Cor de fundo mais clara */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Hover para o botão Descriptografar */
+.botao-descriptografar {
+    background: #D8DFE8;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    transition: all 0.3s ease;
+}
+
+.botao-descriptografar:hover {
+    background-color: #B0B7C1; /* Cor de fundo mais escura */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+}
+
+/* Hover para o botão Copiar */
+.botao-copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 600px;
+    position: absolute;
+    width: 336px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.botao-copiar:hover {
+    border-color: #154aaf; /* Borda em azul mais forte */
+    animation: pulsar 1s infinite; /* Efeito de pulsação */
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.aviso{
+    color: #495057;
+}
+
+.texto-aviso{
+    background-image: url(image/exclamacao.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+
+
